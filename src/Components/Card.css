@@ -1,0 +1,128 @@
+
+.Card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    gap: 50px;
+    width: 20%;
+    min-height: 50vh;
+    transition: transform 1s;
+    margin: 10px;
+}
+
+
+.Card::after ,
+ .Card::before{
+    --angle: 0deg;
+    content: '';
+    background-image: conic-gradient(from var(--angle),transparent 80%,blue);
+    position: absolute;
+    width: 103%;
+    height: 101.7%;
+    translate: -5.3% 0%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+    animation: 2s spin linear infinite;
+    &:hover{
+        z-index: -4;
+    }
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.Card::before{
+    filter: blur(1.5rem);
+}
+
+.title{
+    align-self: flex-start;
+    order: 1;
+}
+
+.desc{
+    padding: 10px;
+    min-width: 30px;
+    height: 10vh;
+    order: 2;
+}
+
+.icon{
+    align-self: flex-end;
+    position: relative;
+    top: 10px;
+    margin-right: 0px;
+    order: 3;
+}
+
+#icon-logo{
+    font-size: 30px;
+}
+
+
+.Card:hover{
+    cursor: pointer;
+    &::before{
+        z-index: -1;
+        background-image: conic-gradient(from var(--angle),transparent,transparent ,red ,transparent,transparent ,green,green);
+    }
+    &::after{
+        z-index: -1;
+        background-image: conic-gradient(from var(--angle),transparent,transparent,red ,transparent,transparent,green,green);
+    }
+}
+
+@media (max-width: 1000px){
+    .Card{
+        width: 35%;
+        min-height: 39vh;
+    }
+}
+
+@media (max-width: 550px){
+    .Card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 470px){
+    .Card{
+        width: 50%;
+        min-height: 10vh;
+        gap: 10px;
+    }
+    .Card>.title{
+        margin-top: 10px;
+    }
+    .Card>.desc{
+        height:fit-content;
+    }
+    .Card>.icon{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .Card{
+        width: 70%;
+    }
+}

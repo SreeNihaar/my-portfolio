@@ -1,0 +1,159 @@
+.text-container{
+    margin: 9% 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.my-details{
+    padding-top: 5%;
+}
+
+.my-text>h1{
+    margin: 50px;
+    color: white;
+}
+
+.my-photo{
+    padding-left: 10%;
+}
+
+#my-photo-img{
+    width: 26rem;
+    border-radius: 12%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+a{
+    display: inline-block;
+}
+
+.link-child{
+    font-size: 2.5rem;
+}
+
+.link-child:hover{
+    opacity: 2;
+}
+
+#linkedin{
+    color:  #0077B5;
+}
+
+#github{
+    color: black;
+}
+
+#instagram{
+    color:deeppink;
+}
+
+.get-resume{
+    margin-top: -1rem;
+    padding-left: 3rem;
+}
+
+#resume-btn{
+    border: none;
+    border-radius: 10%;
+    width: 10rem;
+    height: 3rem;
+    font-size: larger;
+    background-color: black;
+    color: orange;
+}
+#resume-btn:hover{
+    opacity: 0.8;
+}
+
+
+@media (max-width: 912px){
+    .my-details{
+        padding-top: 0px;
+    }
+    #my-photo-img{
+        width: 100%;
+    }
+    .my-text>h1{
+        margin: 0px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-photo {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    #my-photo-img {
+        width: 60%;
+    }
+
+    .link-panel{
+        display: flex;
+        justify-content: center;
+    }
+
+    .links {
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .get-resume{
+        display: flex;
+        justify-content: center;
+        margin-bottom:1rem ;
+        margin-top: 0rem;
+        padding-left: 0;
+    }
+
+    .link-child {
+        font-size: 2.2rem;
+    }
+
+    #gmail{
+        margin-top: -0.2rem;
+    }
+
+    #resume-btn {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+    .link-child {
+        font-size: 2.2rem;
+    }
+
+
+    .text-container{
+        margin-bottom: 7rem;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .links{
+        display: flex;
+    }
+    #resume-btn {
+        width: 7rem;
+        height: 2rem;
+        font-size: small;
+    }
+}
