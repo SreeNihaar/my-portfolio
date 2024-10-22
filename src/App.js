@@ -43,7 +43,7 @@ function App() {
       <ContactMe />
       <hr className="divider2" />
       <div className="copyright">
-        ©The Portfolio of <a href="https://linkedin.com/in/sree-nihaar-chaturvedula">Sree Nihaar Chaturvedula</a>
+        ©The Portfolio of <a href="https://linkedin.com/in/sree-nihaar-chaturvedula" rel='noreferrer' target='_blank'>Sree Nihaar Chaturvedula</a>
       </div>
       </div>    
     </>

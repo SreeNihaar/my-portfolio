@@ -127,8 +127,9 @@
 
 @media (max-width: 430px){
     .project-details::before{
-        width: 105%;
-        translate: -8% -4.8%;
+        width: 101.5%;
+        height: 102%;
+        translate: -8% -4%;
         --degree: 0deg;
     }
 }
