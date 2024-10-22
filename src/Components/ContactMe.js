@@ -11,7 +11,7 @@ const ContactMe = () => {
           <i className="fas fa-envelope"></i> Email:
         </h3>
         <p>
-          <a href="mailto:your.email@example.com">sreenihaarchaturvedula04@gmail.com</a>
+          <a href="mailto:sreenihaarchaturvedula04@gmail.com">sreenihaarchaturvedula04@gmail.com</a>
         </p>
       </div>
       <div className="contact-item">
