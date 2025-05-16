@@ -35,19 +35,19 @@ function Text(){
                             <i className="fab fa-instagram link-child" id='instagram'></i>
                         </a>
                         <a href="mailto:sreenihaarchaturvedula04@gmail.com" target='_blank' rel='noreferrer'>
-                            <img src="./gmail.svg" className='link-child' id='gmail'  alt='gmail'/>
+                            <img src="my-portfolio/gmail.svg" className='link-child' id='gmail'  alt='gmail'/>
                         </a>
                     </div>
                 </div>
                 <div className="get-resume">
-                    <a href="./Sree-Nihaar-Chaturvedula-Resume.pdf" download={'Sree_Nihaar_Chaturvedula_Resume.pdf'}>
+                    <a href="my-portfolio/Sree-Nihaar-Chaturvedula-Resume.pdf" download={'Sree_Nihaar_Chaturvedula_Resume.pdf'}>
                         <button id='resume-btn'>Get Resume</button>
                     </a>
                 </div>
             </div>
             
             <div className="my-photo">
-                <img src="./my images/NihaarPhoto.jpg" id='my-photo-img' alt="" />
+                <img src="my-portfolio/my images/NihaarPhoto.jpg" id='my-photo-img' alt="" />
             </div>
         </div>
             
