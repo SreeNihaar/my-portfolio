@@ -5,24 +5,24 @@ function Internships(props){
     return(
         <>
         <h2 className="headings" id={props.id}>Internships💼</h2>
-
             <div className="internship-class">
                 <div className="intern" id='intern1'>
                     <h2 className="head">
-                        Engineering Intern
+                        Web Developer Intern
                     </h2>
                     <h4 className="company">
-                        FactSet Research Systems Inc.
+                        Main Flow Services and Technologies
                     </h4>
-                    <p className="date">January'25 to Present, Hyderabad (Onsite)</p>
-                    <p className='description'> 
-                        <ul>
-                            <li>Worked on AWS cloud to improve scalability and performance.</li>
-                            <li>Optimizing C++ code for efficient data ingestion and transmission from global stock exchanges.</li>
-                            <li>Troubleshooting and resolving system migration issues while ensuring system reliability.</li>
-                            <li>Working with cloud infrastructure (AWS), Jira, and internal tools to support development workflows.</li>
-                        </ul>
-                    </p>
+                    <p className="date">April'24 to June'24, Virtual</p>
+                </div>
+                <div className="intern" id='intern2'>
+                    <h2 className="head">
+                        Data Science and Machine Learning Intern
+                    </h2>
+                    <h4 className="company">
+                        HDLC Technologies
+                    </h4>
+                    <p className="date">May'23 to June'23, Virtual</p>
                 </div>
             </div>
         </>
